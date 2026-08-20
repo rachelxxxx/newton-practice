@@ -10,3 +10,6 @@ def optimize_multivariate(gradient, hessian, x0, tol=1e-6, max_iterations=100,):
         x_new = x - step
 
         if np.linalg.norm(step) <= tol
+
+
+        #GOODD JOBBBB I am leaving a comment here
