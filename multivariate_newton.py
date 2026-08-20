@@ -9,4 +9,7 @@ def optimize_multivariate(gradient, hessian, x0, tol=1e-6, max_iterations=100,):
         step = np.linalg.solve(h, g)
         x_new = x - step
 
-        if np.linalg.norm(step) <= tol
+        if np.linalg.norm(step) <= tol:
+            return x_new
+        x = x_new
+        
